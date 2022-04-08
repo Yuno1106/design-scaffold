@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+    <link rel="stylesheet" href="../styles/blogs.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="nav nav-container">{% include 'nav.njk' %}</div>
+      <div class="collections">{%- for post in collections.post -%}</div>
+      <article class="article">
+        <div class="article-text">
+          <h3 class="article-title">{{ post.data.title }}</h3>
+          <h4 class="article-aurthor">
+            By {{ post.data.author }} on {{ post.data.date | postDate }}
+          </h4>
+          <img src="{{ post.data.image }}" alt="" class="img-preview" />
+          <br />
+          <a class="article-link hvr-grow" href="{{ post.url }}"
+            >>>Continue Reading<<</a
+          >
+        </div>
+      </article>
+      {%- endfor -%}
+    </section>
+    <script type="module" src="../src/js/blogs.js"></script>
+  </body>
+</html>

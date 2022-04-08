@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yi Hang Sucks Ass</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <body>
+    <section class="container">
+      <header class="header">
+        <div class="nav nav-container"><nav class="desk">
+  <ul role="list" class="desk-nav">
+    <li>
+      <a href="/" class="nav-item-desk link home hvr-grow">Home</a>
+    </li>
+    <li>
+      <a href="/blogs/" class="nav-item-desk link blogs hvr-grow">Blogs</a>
+    </li>
+  </ul>
+</nav>
+</div>
+        <div class="header-container">
+          <h1 class="header-title">Yi Hang Helped a Lot</h1>
+          <p class="header-desc">By Ivan Yim</p>
+        </div>
+        <div class="header-image"></div>
+      </header>
+    </section>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
