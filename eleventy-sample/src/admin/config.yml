@@ -8,7 +8,7 @@ public_folder: "/media"
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "src/md"
+    folder: "eleventy-sample/src/md"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
