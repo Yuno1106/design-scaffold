@@ -1,15 +1,11 @@
+@import url(base.css);
+
 html, body,
 *{
     font-size: 1.2rem;
     margin: 0;
     list-style-type: none;
 }
-
-:root{
-    --primary: #776885;
-    --secondary: #5F1A37;
-    --black: #000000;
-    }
 
 body{
     background: var(--primary);
