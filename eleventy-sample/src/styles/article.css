@@ -86,3 +86,26 @@ margin-left: 10%;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
+  @media all and (max-width: 930px) {
+    .figure-image{
+        max-width: 80%;
+        
+    }
+   .main-article{
+       font-size: .5rem;
+   }
+    
+    .header-title{
+        font-size: 2rem;
+        padding-left: 5%;
+        width: auto;
+    }
+    .header-desc{
+        width: auto;
+    }
+  }
+@media all and (max-width: 450px){
+  .link{
+      padding: .1rem;
+      margin-right: 1rem;
+}
